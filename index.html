@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGBE - Sistema de Gestão</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="../css/livros.css">
+    <link rel="stylesheet" href="../css/alunos.css">
+    <link rel="stylesheet" href="../css/emprestimos.css">
+</head>
+<body>
+    <div class="app-layout">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>SGBE</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active" data-view="dashboard">
+                    <i class="fas fa-chart-line"></i> Dashboard
+                </a>
+                <a href="#" class="nav-item" data-view="livros">
+                    <i class="fas fa-book"></i> Livros
+                </a>
+                <a href="#" class="nav-item" data-view="alunos">
+                    <i class="fas fa-user-graduate"></i> Alunos
+                </a>
+                <a href="#" class="nav-item" data-view="emprestimos">
+                    <i class="fas fa-handshake"></i> Empréstimos
+                </a>
+                <a href="#" class="nav-item" data-view="relatorios">
+                    <i class="fas fa-file-alt"></i> Relatórios
+                </a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <div class="topbar-title">
+                    <h1 id="current-view-title">Dashboard</h1>
+                </div>
+                <div class="topbar-user">
+                    <span>Administrador</span>
+                    <div class="user-avatar">AD</div>
+                </div>
+            </header>
+
+            <div id="content-area" class="container">
+            </div>
+        </main>
+    </div>
+
+    <div id="modal-container" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Formulário</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div id="modal-body" class="modal-body">
+            </div>
+        </div>
+    </div>
+
+    <div id="notification-container" class="notification-area"></div>
+
+    <div id="confirm-modal" class="modal">
+        <div class="modal-content modal-sm">
+            <div class="modal-header">
+                <h3>Confirmar Ação</h3>
+            </div>
+            <div class="modal-body">
+                <p id="confirm-message">Deseja realmente prosseguir?</p>
+                <div class="modal-actions">
+                    <button id="confirm-yes" class="btn-danger">Confirmar</button>
+                    <button id="confirm-no" class="btn-secondary">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

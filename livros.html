@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGBE - Livros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/livros.css">
+</head>
+<body>
+    <header>
+        <h1>Gestão de Livros</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="livros.html">Livros</a>
+        <a href="alunos.html">Alunos</a>
+    </nav>
+
+    <main class="container">
+        <section id="form-container" class="card">
+            <h3 class="page-title">Novo Livro</h3>
+            <form id="livro-form">
+                <input type="hidden" id="livro-id">
+                <div class="form-grid-livro">
+                    <input type="text" id="titulo" placeholder="Título do Livro" required>
+                    <input type="text" id="autor" placeholder="Autor" required>
+                </div>
+                <button type="submit">Salvar</button>
+            </form>
+        </section>
+
+        <section id="list-container" class="card">
+            <h3 class="page-title">Acervo Atual</h3>
+            <table id="livros-table">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th class="actions-header">Ações</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="../js/livros.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.page-title {
+    margin-bottom: 1rem;
+}
+
+.form-grid-livro {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+.actions-header {
+    text-align: right;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGBE - Empréstimos</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/emprestimos.css">
+</head>
+<body>
+    <header>
+        <h1>Circulação e Empréstimos</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="livros.html">Livros</a>
+        <a href="alunos.html">Alunos</a>
+        <a href="emprestimos.html">Empréstimos</a>
+    </nav>
+
+    <main class="container">
+        <section class="card">
+            <h3>Novo Empréstimo</h3>
+            <form id="emprestimo-form">
+                <div class="grid-form">
+                    <div>
+                        <label>ID do Aluno</label>
+                        <input type="number" id="aluno-id" placeholder="Ex: 101" required>
+                    </div>
+                    <div>
+                        <label>ID do Livro</label>
+                        <input type="number" id="livro-id" placeholder="Ex: 50" required>
+                    </div>
+                </div>
+                <p class="form-hint">* A data prevista será calculada para +7 dias automaticamente.</p>
+                <button type="submit">Registrar Empréstimo</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h3>Histórico de Circulação</h3>
+            <table id="emprestimos-table">
+                <thead>
+                    <tr>
+                        <th>Livro</th>
+                        <th>Aluno</th>
+                        <th>Data Prevista</th>
+                        <th class="actions-header">Ações</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="../js/emprestimos.js"></script>
+</body>
+</html>

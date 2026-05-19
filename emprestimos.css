@@ -1,0 +1,15 @@
+.grid-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.form-hint {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin: 10px 0;
+}
+
+.actions-header {
+    text-align: right;
+}
