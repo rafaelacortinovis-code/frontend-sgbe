@@ -1,0 +1,22 @@
+.page-title {
+    margin-bottom: 1rem;
+}
+
+.form-grid-aluno {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+.actions-header {
+    text-align: right;
+}.search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    flex: 1;
+    margin: 0;
+}
